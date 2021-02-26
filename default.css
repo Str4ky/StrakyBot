@@ -125,6 +125,11 @@
     text-decoration: none;
 }
 
+.back:hover {
+    transition-duration: 0.4s;
+    color: rgb(211, 211, 211);
+}
+
 .changelog {
     text-align: center;
     font-weight: bold;
