@@ -10,6 +10,11 @@
     margin-top: 150px;
 }
 
+.title2 {
+    font-size: 48px;
+    margin-top: 50px;
+}
+
 .button {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
