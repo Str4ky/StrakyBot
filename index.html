@@ -10,7 +10,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    #myBtn {
+        transition-duration: 0.4s;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    #myBtn:hover {
+        transition-duration: 0.4s;
+        color: rgb(211, 211, 211);
+    }
+</style>
+
 <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Retourner en haut">Retourner en haut</button>
 
     <center>
         <h1 class="title">$trakyBot<br>Un bot pour vous</h1>
@@ -24,8 +58,28 @@
         <a href="changelog.html" class="button2">Afficher le changelog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <a href="wiki.html" class="button3">Afficher le wiki</a>
-    </center>
+    </center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+
+    <div>
+        <h2 class="text" style="float: left;"><img class="img_left" src="screen.png"></h2>
+        <h2>Des commandes uniques<br>en tout genres</h2>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <h2 class="text2">Un bot musique innovent</h2>
+        <h2><img class="img_right" src="screen2.png"></h2>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <h2 class="text3" style="float: left;"><img class="img_left" src="screen3.png"></h2>
+        <h2>Un paramétrage facile</h2>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <h2 class="text4">Quelque chose ne vous plait pas ?<br>Désactivez-le dans les options</h2>
+        <h2><img class="img_right" src="screen4.png"></h2>
+    </div>
 
 </body>
 
@@ -34,5 +88,25 @@
     <p class="version">V 7.5.0</p>
 
 </footer>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 </html>
