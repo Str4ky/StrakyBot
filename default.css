@@ -1,8 +1,24 @@
+body {}
+
+@keyframes bg_animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1920px 1080px;
+    }
+}
+
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("https://i.imgur.com/54t3BiF.png");
     background-attachment: fixed;
     color: white;
+    /*transition: .5s ease-in-out;*/
+    animation-name: bg_animation;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .title {
